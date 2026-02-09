@@ -2,13 +2,50 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Valentinedle</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <h1>Valentinedle</h1>
-    <p>Coming soon ❤️</p>
+    <main class="wrap">
+        <header class="top">
+            <h1 class="title">Valentinedle</h1>
+            <p class="subtitle">Type guesses to unlock the memory ❤️</p>
+        </header>
+
+        <section class="card">
+            <div id="promptText" class="prompt"></div>
+            <img id="promptImage" class="photo" alt="" />
+        </section>
+
+        <section class="card">
+            <form id="guessForm" autocomplete="off" class="guessForm">
+                <input id="guessInput" type="text" placeholder="Type a guess..." />
+                <button type="submit">Guess</button>
+            </form>
+
+            <div class="hintRow">
+                <span class="hintLabel">Closeness</span>
+                <span class="hintLegend">❄️ 🟠 🟡 🔥 ❤️</span>
+            </div>
+
+            <div id="guesses" class="guesses"></div>
+        </section>
+
+        <section id="reveal" class="card reveal hidden">
+            <h2 id="revealTitle"></h2>
+            <p id="revealText"></p>
+            <button id="nextBtn" type="button">Next memory</button>
+        </section>
+
+        <footer class="footer">
+            <span id="puzzleMeta"></span>
+        </footer>
+    </main>
+
+    <script src="game.js"></script>
 </body>
 
 </html>

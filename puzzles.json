@@ -1,0 +1,20 @@
+[
+  {
+    "id": "starter",
+    "title": "Memory 1",
+    "prompt": "Warm up puzzle.\nType anything related to a comedy night in KC.",
+    "image": "",
+    "revealTitle": "You unlocked it ❤️",
+    "revealText": "This is where your sweet reveal message goes.\nYou can also add a photo later.",
+    "tags": [
+      { "t": "kansas city", "w": 60 },
+      { "t": "kc", "w": 60 },
+      { "t": "comedy", "w": 70 },
+      { "t": "standup", "w": 70 },
+      { "t": "show", "w": 50 },
+      { "t": "theater", "w": 45 },
+      { "t": "gianmarco", "w": 100 }
+    ],
+    "acceptScore": 90
+  }
+]
