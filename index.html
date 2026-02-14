@@ -12,12 +12,18 @@
     <main class="wrap">
         <header class="top">
             <h1 class="title">Valentinedle</h1>
-            <p class="subtitle">Type guesses to unlock the memory ❤️</p>
+            <p class="subtitle">Guess the memory ❤️</p>
         </header>
 
         <section class="card">
             <div id="promptText" class="prompt"></div>
             <img id="promptImage" class="photo" alt="" />
+        </section>
+
+        <section id="reveal" class="card reveal hidden">
+            <h2 id="revealTitle"></h2>
+            <p id="revealText"></p>
+            <button id="nextBtn" type="button">Next memory</button>
         </section>
 
         <section class="card">
@@ -33,16 +39,6 @@
 
             <div id="guesses" class="guesses"></div>
         </section>
-
-        <section id="reveal" class="card reveal hidden">
-            <h2 id="revealTitle"></h2>
-            <p id="revealText"></p>
-            <button id="nextBtn" type="button">Next memory</button>
-        </section>
-
-        <footer class="footer">
-            <span id="puzzleMeta"></span>
-        </footer>
     </main>
 
     <script src="game.js"></script>

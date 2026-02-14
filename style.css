@@ -29,6 +29,7 @@ body {
 .subtitle {
     margin: 0;
     opacity: 0.75;
+    padding-left: 5px;
 }
 
 .card {
@@ -41,19 +42,29 @@ body {
     font-size: 18px;
     margin-bottom: 12px;
     white-space: pre-wrap;
+    text-align:center;
 }
 
 .photo {
+    max-width: 420px;
+    /* slightly larger overall */
     width: 100%;
+    max-height: 380px;
+    /* height cap */
     height: auto;
+
     border-radius: 14px;
     display: none;
+    margin: 40px auto;
+    /* replaces padding-top/bottom */
+
+    object-fit: contain;
+    /* preserves full image */
 
     filter: blur(var(--blur, 0px));
     transition: filter 200ms ease;
 
-    min-height: 240px;
-    object-fit: cover;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
 }
 
 .guessForm {
@@ -75,6 +86,7 @@ button {
     border: 1px solid #ccc;
     background: white;
     cursor: pointer;
+    border: 2px solid #80a0f8;
 }
 
 button:disabled {

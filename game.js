@@ -16,7 +16,7 @@ let puzzles = [];
 let puzzleIndex = 0;
 let solved = false;
 
-let blurPx = 18; // starting blur for each puzzle
+let blurPx = 30; // starting blur for each puzzle
 const blurMin = 0; // fully clear
 
 function normalize(s) {
@@ -98,7 +98,10 @@ function computeScore(guessRaw, tags) {
 
     if (guess === tag) {
       s = w;
-    } else if (guess.includes(tag) || tag.includes(guess)) {
+    } else if (
+      guess.length >= 3 &&
+      (guess.includes(tag) || tag.includes(guess))
+    ) {
       s = Math.min(80, w);
     } else {
       s = typoScore(guess, tag);
@@ -141,13 +144,23 @@ function showPuzzle(p) {
 
   promptTextEl.textContent = p.prompt || "";
 
-  blurPx = typeof p.startBlur === "number" ? p.startBlur : 18;
-  promptImageEl.style.setProperty("--blur", `${blurPx}px`);
 
   if (p.image) {
+    // Hide first to prevent unblurred flash
+    promptImageEl.style.display = "none";
+
+    // Reset blur before showing
+    blurPx = typeof p.startBlur === "number" ? p.startBlur : 18;
+    promptImageEl.style.setProperty("--blur", `${blurPx}px`);
+
+    // Set src after blur is ready
     promptImageEl.src = p.image;
-    promptImageEl.style.display = "block";
     promptImageEl.alt = p.title || "Memory photo";
+
+    // Show only once the image has loaded
+    promptImageEl.onload = () => {
+      promptImageEl.style.display = "block";
+    };
   } else {
     promptImageEl.style.display = "none";
     promptImageEl.removeAttribute("src");
@@ -173,7 +186,7 @@ function nextPuzzle() {
 }
 
 function applyUnblur(emoji) {
-  const step = 1.5; // reveal amount per guess, tweak this number
+  const step = 2; // reveal amount per guess, tweak this number
   if (emoji === "❤️") blurPx = blurMin;
   else blurPx = Math.max(blurMin, blurPx - step);
 

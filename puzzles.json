@@ -6,7 +6,7 @@
     "image": "assets/1.jpg",
     "startBlur": 22,
     "revealTitle": "Trivia Night ❤️",
-    "revealText": "Write your sweet little message here.",
+
     "tags": [
       { "t": "goku", "w": 30 },
       { "t": "anime", "w": 30 },
@@ -43,7 +43,7 @@
     "image": "assets/2.jpg",
     "startBlur": 22,
     "revealTitle": "Top Gunz Show ❤️",
-    "revealText": "Write your sweet little message here.",
+
     "tags": [
       { "t": "bar", "w": 30 },
       { "t": "crowd", "w": 30 },
@@ -78,7 +78,7 @@
     "image": "assets/3.jpg",
     "startBlur": 22,
     "revealTitle": "Pumpkin Patch ❤️",
-    "revealText": "Write your sweet little message here.",
+
     "tags": [
       { "t": "orange", "w": 30 },
       { "t": "cold", "w": 30 },
@@ -111,7 +111,7 @@
     "image": "assets/4.jpg",
     "startBlur": 22,
     "revealTitle": "Halloween Party ❤️",
-    "revealText": "Write your sweet little message here.",
+
     "tags": [
       { "t": "dress up", "w": 30 },
       { "t": "night", "w": 30 },
@@ -144,7 +144,7 @@
     "image": "assets/5.jpg",
     "startBlur": 22,
     "revealTitle": "Gianmarco Soresi ❤️",
-    "revealText": "Write your sweet little message here.",
+
     "tags": [
       { "t": "trip", "w": 30 },
       { "t": "road", "w": 30 },
@@ -177,7 +177,7 @@
     "image": "assets/6.jpg",
     "startBlur": 22,
     "revealTitle": "Dorian's Birthday ❤️",
-    "revealText": "Write your sweet little message here.",
+
     "tags": [
       { "t": "friends", "w": 30 },
       { "t": "gifts", "w": 30 },
@@ -211,7 +211,7 @@
     "image": "assets/7.jpg",
     "startBlur": 22,
     "revealTitle": "Hanukkah ❤️",
-    "revealText": "Write your sweet little message here.",
+
     "tags": [
       { "t": "winter", "w": 30 },
       { "t": "december", "w": 30 },
@@ -242,7 +242,7 @@
     "image": "assets/8.jpg",
     "startBlur": 22,
     "revealTitle": "Garden Glow ❤️",
-    "revealText": "Write your sweet little message here.",
+
     "tags": [
       { "t": "cold", "w": 30 },
       { "t": "glowing", "w": 30 },
@@ -270,7 +270,7 @@
     "image": "assets/9.jpg",
     "startBlur": 22,
     "revealTitle": "Art Museum ❤️",
-    "revealText": "Write your sweet little message here.",
+
     "tags": [
       { "t": "quiet", "w": 30 },
       { "t": "building", "w": 30 },
@@ -299,7 +299,7 @@
     "image": "assets/10.jpg",
     "startBlur": 22,
     "revealTitle": "Antique Mall ❤️",
-    "revealText": "Write your sweet little message here.",
+
     "tags": [
       { "t": "dusty", "w": 30 },
       { "t": "weird", "w": 30 },
