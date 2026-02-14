@@ -16,8 +16,8 @@ let puzzles = [];
 let puzzleIndex = 0;
 let solved = false;
 
-let blurPx = 18;        // starting blur for each puzzle
-const blurMin = 0;      // fully clear
+let blurPx = 18; // starting blur for each puzzle
+const blurMin = 0; // fully clear
 
 function normalize(s) {
   return (s || "")
@@ -35,6 +35,13 @@ function escapeHtml(s) {
     "\"": "&quot;",
     "'": "&#039;"
   }[c]));
+}
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
 }
 
 function editDistance(a, b) {
@@ -165,6 +172,14 @@ function nextPuzzle() {
   showPuzzle(puzzles[puzzleIndex]);
 }
 
+function applyUnblur(emoji) {
+  const step = 1.5; // reveal amount per guess, tweak this number
+  if (emoji === "❤️") blurPx = blurMin;
+  else blurPx = Math.max(blurMin, blurPx - step);
+
+  promptImageEl.style.setProperty("--blur", `${blurPx}px`);
+}
+
 async function init() {
   const res = await fetch("puzzles.json", { cache: "no-store" });
   puzzles = await res.json();
@@ -173,6 +188,8 @@ async function init() {
     promptTextEl.textContent = "No puzzles found. Add puzzles to puzzles.json.";
     return;
   }
+
+  shuffle(puzzles);
 
   showPuzzle(puzzles[puzzleIndex]);
 }
@@ -191,6 +208,7 @@ guessForm.addEventListener("submit", (e) => {
 
   addGuessRow(guess, emoji, note);
   applyUnblur(emoji);
+
   guessInput.value = "";
   guessInput.focus();
 
@@ -203,11 +221,3 @@ guessForm.addEventListener("submit", (e) => {
 nextBtn.addEventListener("click", () => nextPuzzle());
 
 init();
-
-function applyUnblur(emoji) {
-  const step = 1.5; // reveal amount per guess, tweak this number
-  if (emoji === "❤️") blurPx = blurMin;
-  else blurPx = Math.max(blurMin, blurPx - step);
-
-  promptImageEl.style.setProperty("--blur", `${blurPx}px`);
-};

@@ -51,6 +51,9 @@ body {
 
     filter: blur(var(--blur, 0px));
     transition: filter 200ms ease;
+
+    min-height: 240px;
+    object-fit: cover;
 }
 
 .guessForm {

@@ -1,20 +1,323 @@
 [
   {
-    "id": "starter",
-    "title": "Memory 1",
-    "prompt": "Warm up puzzle.\nType anything related to a comedy night in KC.",
-    "image": "",
+    "id": "trivia-night",
+    "title": "Trivia Night",
+    "prompt": "What memory is this?",
+    "image": "assets/1.jpg",
     "startBlur": 22,
-    "revealTitle": "You unlocked it ❤️",
-    "revealText": "This is where your sweet reveal message goes.\nYou can also add a photo later.",
+    "revealTitle": "Trivia Night ❤️",
+    "revealText": "Write your sweet little message here.",
     "tags": [
-      { "t": "kansas city", "w": 60 },
-      { "t": "kc", "w": 60 },
-      { "t": "comedy", "w": 70 },
-      { "t": "standup", "w": 70 },
-      { "t": "show", "w": 50 },
-      { "t": "theater", "w": 45 },
-      { "t": "gianmarco", "w": 100 }
+      { "t": "goku", "w": 30 },
+      { "t": "anime", "w": 30 },
+      { "t": "dragon ball", "w": 30 },
+      { "t": "nerd", "w": 30 },
+      { "t": "night out", "w": 30 },
+      { "t": "weekday", "w": 30 },
+      { "t": "table", "w": 30 },
+      { "t": "friends", "w": 30 },
+
+      { "t": "bar", "w": 55 },
+      { "t": "pub", "w": 55 },
+      { "t": "questions", "w": 55 },
+      { "t": "team", "w": 55 },
+      { "t": "scoreboard", "w": 55 },
+      { "t": "competition", "w": 55 },
+      { "t": "drinks", "w": 55 },
+
+      { "t": "itap", "w": 80 },
+      { "t": "ava", "w": 80 },
+      { "t": "tre", "w": 80 },
+      { "t": "the loop", "w": 80 },
+      { "t": "loop", "w": 80 },
+
+      { "t": "trivia", "w": 100 },
+      { "t": "trivia night", "w": 100 }
+    ],
+    "acceptScore": 90
+  },
+  {
+    "id": "top-gunz-show",
+    "title": "Top Gunz Show",
+    "prompt": "What memory is this?",
+    "image": "assets/2.jpg",
+    "startBlur": 22,
+    "revealTitle": "Top Gunz Show ❤️",
+    "revealText": "Write your sweet little message here.",
+    "tags": [
+      { "t": "bar", "w": 30 },
+      { "t": "crowd", "w": 30 },
+      { "t": "lights", "w": 30 },
+      { "t": "singing", "w": 30 },
+      { "t": "mic", "w": 30 },
+      { "t": "night", "w": 30 },
+      { "t": "loud", "w": 30 },
+
+      { "t": "halloween", "w": 60 },
+      { "t": "costume", "w": 60 },
+      { "t": "guitar", "w": 60 },
+      { "t": "stage", "w": 60 },
+      { "t": "live music", "w": 60 },
+      { "t": "drummer", "w": 60 },
+      { "t": "performance", "w": 60 },
+
+      { "t": "sybergs", "w": 85 },
+      { "t": "dad", "w": 85 },
+      { "t": "rock show", "w": 85 },
+      { "t": "band", "w": 85 },
+
+      { "t": "top gunz", "w": 100 },
+      { "t": "topgunz", "w": 100 }
+    ],
+    "acceptScore": 90
+  },
+  {
+    "id": "pumpkin-patch",
+    "title": "Pumpkin Patch",
+    "prompt": "What memory is this?",
+    "image": "assets/3.jpg",
+    "startBlur": 22,
+    "revealTitle": "Pumpkin Patch ❤️",
+    "revealText": "Write your sweet little message here.",
+    "tags": [
+      { "t": "orange", "w": 30 },
+      { "t": "cold", "w": 30 },
+      { "t": "sweater", "w": 30 },
+      { "t": "outside", "w": 30 },
+      { "t": "field", "w": 30 },
+      { "t": "october", "w": 30 },
+
+      { "t": "fall", "w": 60 },
+      { "t": "farm", "w": 60 },
+      { "t": "hay", "w": 60 },
+      { "t": "picking", "w": 60 },
+      { "t": "cider", "w": 60 },
+      { "t": "apples", "w": 60 },
+      { "t": "autumn", "w": 60 },
+
+      { "t": "eckerts", "w": 85 },
+      { "t": "corn maze", "w": 85 },
+      { "t": "cornmaze", "w": 85 },
+
+      { "t": "pumpkins", "w": 100 },
+      { "t": "pumpkin patch", "w": 100 }
+    ],
+    "acceptScore": 90
+  },
+  {
+    "id": "halloween-party",
+    "title": "Halloween Party",
+    "prompt": "What memory is this?",
+    "image": "assets/4.jpg",
+    "startBlur": 22,
+    "revealTitle": "Halloween Party ❤️",
+    "revealText": "Write your sweet little message here.",
+    "tags": [
+      { "t": "dress up", "w": 30 },
+      { "t": "night", "w": 30 },
+      { "t": "music", "w": 30 },
+      { "t": "friends", "w": 30 },
+      { "t": "dancing", "w": 30 },
+
+      { "t": "costume", "w": 60 },
+      { "t": "party", "w": 60 },
+      { "t": "october", "w": 60 },
+      { "t": "spooky", "w": 60 },
+      { "t": "mask", "w": 60 },
+      { "t": "themed", "w": 60 },
+
+      { "t": "rhett and link", "w": 85 },
+      { "t": "nerd vs geek", "w": 85 },
+      { "t": "columbia", "w": 85 },
+      { "t": "michael", "w": 85 },
+      { "t": "mj", "w": 85 },
+
+      { "t": "halloween", "w": 100 },
+      { "t": "halloween party", "w": 100 }
+    ],
+    "acceptScore": 90
+  },
+  {
+    "id": "gianmarco-soresi",
+    "title": "Gianmarco Soresi",
+    "prompt": "What memory is this?",
+    "image": "assets/5.jpg",
+    "startBlur": 22,
+    "revealTitle": "Gianmarco Soresi ❤️",
+    "revealText": "Write your sweet little message here.",
+    "tags": [
+      { "t": "trip", "w": 30 },
+      { "t": "road", "w": 30 },
+      { "t": "night out", "w": 30 },
+      { "t": "tickets", "w": 30 },
+      { "t": "performance", "w": 30 },
+
+      { "t": "theater", "w": 60 },
+      { "t": "mic", "w": 60 },
+      { "t": "stage", "w": 60 },
+      { "t": "laughing", "w": 60 },
+      { "t": "show", "w": 60 },
+      { "t": "date", "w": 60 },
+
+      { "t": "comedy show", "w": 85 },
+      { "t": "standup", "w": 85 },
+      { "t": "kansas city", "w": 85 },
+      { "t": "kc", "w": 85 },
+      { "t": "comedy", "w": 85 },
+
+      { "t": "gianmarco", "w": 100 },
+      { "t": "gianmarco soresi", "w": 100 }
+    ],
+    "acceptScore": 90
+  },
+  {
+    "id": "dorians-birthday",
+    "title": "Dorian's Birthday",
+    "prompt": "What memory is this?",
+    "image": "assets/6.jpg",
+    "startBlur": 22,
+    "revealTitle": "Dorian's Birthday ❤️",
+    "revealText": "Write your sweet little message here.",
+    "tags": [
+      { "t": "friends", "w": 30 },
+      { "t": "gifts", "w": 30 },
+      { "t": "food", "w": 30 },
+      { "t": "night", "w": 30 },
+      { "t": "laughing", "w": 30 },
+
+      { "t": "cake", "w": 60 },
+      { "t": "dinner", "w": 60 },
+      { "t": "celebration", "w": 60 },
+      { "t": "restaurant", "w": 60 },
+      { "t": "candles", "w": 60 },
+
+      { "t": "korean", "w": 80 },
+      { "t": "korean bbq", "w": 85 },
+      { "t": "hotpot", "w": 85 },
+      { "t": "bbq", "w": 80 },
+      { "t": "party", "w": 80 },
+      { "t": "24", "w": 85 },
+
+      { "t": "birthday", "w": 100 },
+      { "t": "dorian birthday", "w": 100 },
+      { "t": "dorian's birthday", "w": 100 }
+    ],
+    "acceptScore": 90
+  },
+  {
+    "id": "hanukkah",
+    "title": "Hanukkah",
+    "prompt": "What memory is this?",
+    "image": "assets/7.jpg",
+    "startBlur": 22,
+    "revealTitle": "Hanukkah ❤️",
+    "revealText": "Write your sweet little message here.",
+    "tags": [
+      { "t": "winter", "w": 30 },
+      { "t": "december", "w": 30 },
+      { "t": "party", "w": 30 },
+      { "t": "gifts", "w": 30 },
+      { "t": "tradition", "w": 30 },
+
+      { "t": "holiday", "w": 60 },
+      { "t": "celebrate", "w": 60 },
+      { "t": "candles", "w": 60 },
+      { "t": "house", "w": 60 },
+      { "t": "family", "w": 60 },
+      { "t": "latkes", "w": 60 },
+
+      { "t": "menorah", "w": 85 },
+      { "t": "dreidel", "w": 85 },
+      { "t": "jewish", "w": 85 },
+
+      { "t": "hanukkah", "w": 100 },
+      { "t": "chanukah", "w": 100 }
+    ],
+    "acceptScore": 90
+  },
+  {
+    "id": "garden-glow",
+    "title": "Garden Glow",
+    "prompt": "What memory is this?",
+    "image": "assets/8.jpg",
+    "startBlur": 22,
+    "revealTitle": "Garden Glow ❤️",
+    "revealText": "Write your sweet little message here.",
+    "tags": [
+      { "t": "cold", "w": 30 },
+      { "t": "glowing", "w": 30 },
+      { "t": "decorations", "w": 30 },
+      { "t": "night", "w": 30 },
+      { "t": "outside", "w": 30 },
+
+      { "t": "christmas", "w": 60 },
+      { "t": "holiday", "w": 60 },
+      { "t": "winter", "w": 60 },
+      { "t": "forest park", "w": 60 },
+      { "t": "stl", "w": 60 },
+
+      { "t": "botanical gardens", "w": 85 },
+      { "t": "lights", "w": 85 },
+
+      { "t": "garden glow", "w": 100 }
+    ],
+    "acceptScore": 90
+  },
+  {
+    "id": "art-museum",
+    "title": "Art Museum",
+    "prompt": "What memory is this?",
+    "image": "assets/9.jpg",
+    "startBlur": 22,
+    "revealTitle": "Art Museum ❤️",
+    "revealText": "Write your sweet little message here.",
+    "tags": [
+      { "t": "quiet", "w": 30 },
+      { "t": "building", "w": 30 },
+      { "t": "marble", "w": 30 },
+      { "t": "culture", "w": 30 },
+      { "t": "date", "w": 30 },
+
+      { "t": "painting", "w": 60 },
+      { "t": "sculptures", "w": 60 },
+      { "t": "gallery", "w": 60 },
+      { "t": "art", "w": 60 },
+
+      { "t": "forest park", "w": 85 },
+      { "t": "stl", "w": 85 },
+      { "t": "exhibit", "w": 85 },
+      { "t": "exhibition", "w": 85 },
+
+      { "t": "art museum", "w": 100 }
+    ],
+    "acceptScore": 90
+  },
+  {
+    "id": "antique-mall",
+    "title": "Antique Mall",
+    "prompt": "What memory is this?",
+    "image": "assets/10.jpg",
+    "startBlur": 22,
+    "revealTitle": "Antique Mall ❤️",
+    "revealText": "Write your sweet little message here.",
+    "tags": [
+      { "t": "dusty", "w": 30 },
+      { "t": "weird", "w": 30 },
+      { "t": "browsing", "w": 30 },
+      { "t": "wandering", "w": 30 },
+      { "t": "shopping", "w": 30 },
+
+      { "t": "old", "w": 60 },
+      { "t": "collectibles", "w": 60 },
+      { "t": "retro", "w": 60 },
+      { "t": "random stuff", "w": 60 },
+      { "t": "booths", "w": 60 },
+
+      { "t": "telescope", "w": 85 },
+      { "t": "vintage", "w": 85 },
+
+      { "t": "antique mall", "w": 100 },
+      { "t": "antique store", "w": 100 }
     ],
     "acceptScore": 90
   }
