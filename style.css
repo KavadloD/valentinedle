@@ -48,6 +48,9 @@ body {
     height: auto;
     border-radius: 14px;
     display: none;
+
+    filter: blur(var(--blur, 0px));
+    transition: filter 200ms ease;
 }
 
 .guessForm {

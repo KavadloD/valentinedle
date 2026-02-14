@@ -4,6 +4,7 @@
     "title": "Memory 1",
     "prompt": "Warm up puzzle.\nType anything related to a comedy night in KC.",
     "image": "",
+    "startBlur": 22,
     "revealTitle": "You unlocked it ❤️",
     "revealText": "This is where your sweet reveal message goes.\nYou can also add a photo later.",
     "tags": [

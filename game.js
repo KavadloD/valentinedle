@@ -16,6 +16,9 @@ let puzzles = [];
 let puzzleIndex = 0;
 let solved = false;
 
+let blurPx = 18;        // starting blur for each puzzle
+const blurMin = 0;      // fully clear
+
 function normalize(s) {
   return (s || "")
     .toLowerCase()
@@ -131,6 +134,9 @@ function showPuzzle(p) {
 
   promptTextEl.textContent = p.prompt || "";
 
+  blurPx = typeof p.startBlur === "number" ? p.startBlur : 18;
+  promptImageEl.style.setProperty("--blur", `${blurPx}px`);
+
   if (p.image) {
     promptImageEl.src = p.image;
     promptImageEl.style.display = "block";
@@ -184,6 +190,7 @@ guessForm.addEventListener("submit", (e) => {
   const { emoji, note } = scoreToEmoji(score, accept);
 
   addGuessRow(guess, emoji, note);
+  applyUnblur(emoji);
   guessInput.value = "";
   guessInput.focus();
 
@@ -196,3 +203,11 @@ guessForm.addEventListener("submit", (e) => {
 nextBtn.addEventListener("click", () => nextPuzzle());
 
 init();
+
+function applyUnblur(emoji) {
+  const step = 1.5; // reveal amount per guess, tweak this number
+  if (emoji === "❤️") blurPx = blurMin;
+  else blurPx = Math.max(blurMin, blurPx - step);
+
+  promptImageEl.style.setProperty("--blur", `${blurPx}px`);
+};
