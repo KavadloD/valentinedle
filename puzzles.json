@@ -67,7 +67,9 @@
       { "t": "band", "w": 85 },
 
       { "t": "top gunz", "w": 100 },
-      { "t": "topgunz", "w": 100 }
+      { "t": "top gunz show", "w": 100 },
+      { "t": "topgunz", "w": 100 },
+      { "t": "topgunz show", "w": 100 }
     ],
     "acceptScore": 90
   },
@@ -98,8 +100,8 @@
       { "t": "eckerts", "w": 85 },
       { "t": "corn maze", "w": 85 },
       { "t": "cornmaze", "w": 85 },
+      { "t": "pumpkins", "w": 85 },
 
-      { "t": "pumpkins", "w": 100 },
       { "t": "pumpkin patch", "w": 100 }
     ],
     "acceptScore": 90
@@ -166,7 +168,8 @@
       { "t": "comedy", "w": 85 },
 
       { "t": "gianmarco", "w": 100 },
-      { "t": "gianmarco soresi", "w": 100 }
+      { "t": "gianmarco soresi", "w": 100 },
+      { "t": "gianmarco soresi show", "w": 100 }
     ],
     "acceptScore": 90
   },
@@ -199,6 +202,7 @@
       { "t": "24", "w": 85 },
 
       { "t": "birthday", "w": 100 },
+      { "t": "birthday party", "w": 100 },
       { "t": "dorian birthday", "w": 100 },
       { "t": "dorian's birthday", "w": 100 }
     ],

@@ -64,7 +64,7 @@ body {
     filter: blur(var(--blur, 0px));
     transition: filter 200ms ease;
 
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 1px 18px rgba(0, 0, 0, 0.10);
 }
 
 .guessForm {
@@ -148,4 +148,20 @@ button:disabled {
 
 .hidden {
     display: none;
+}
+
+.titleRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.roundIndicator {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    /* force visible text */
+    opacity: 1;
+    /* remove fading */
 }

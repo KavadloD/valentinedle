@@ -11,6 +11,7 @@ const revealTitleEl = $("revealTitle");
 const revealTextEl = $("revealText");
 const nextBtn = $("nextBtn");
 const puzzleMetaEl = $("puzzleMeta");
+const roundIndicatorEl = $("roundIndicator");
 
 let puzzles = [];
 let puzzleIndex = 0;
@@ -171,6 +172,8 @@ function showPuzzle(p) {
 
   guessInput.value = "";
   guessInput.focus();
+
+  roundIndicatorEl.textContent = `${puzzleIndex + 1} / ${puzzles.length}`;
 }
 
 function revealPuzzle(p) {
@@ -179,9 +182,49 @@ function revealPuzzle(p) {
   revealEl.classList.remove("hidden");
 }
 
+function showFinalScreen() {
+  // Hide the guessing card
+  const guessCard = guessForm.closest(".card");
+  if (guessCard) guessCard.style.display = "none";
+
+  // Hide old guesses too, just in case
+  guessesEl.innerHTML = "";
+
+  promptTextEl.textContent = "You got them all right!";
+
+  // Ensure final image shows fully clear
+  blurPx = blurMin;
+  promptImageEl.style.setProperty("--blur", `${blurPx}px`);
+
+  // Prevent flash
+  promptImageEl.style.display = "none";
+  promptImageEl.onload = () => {
+    promptImageEl.style.display = "block";
+  };
+
+  // Set your final image path here
+  promptImageEl.src = "assets/final.jpg";
+  promptImageEl.alt = "Final memory";
+
+  // Reveal section becomes the final message area
+  revealTitleEl.textContent = "Happy Valentine’s Day!";
+  revealTextEl.textContent = "I love you so much and I want to spend the rest of my life with you :)";
+  revealEl.classList.remove("hidden");
+
+  // No more next button
+  nextBtn.style.display = "none";
+}
+
 function nextPuzzle() {
   if (!puzzles.length) return;
-  puzzleIndex = (puzzleIndex + 1) % puzzles.length;
+
+  // If we are at the last puzzle, show the final screen
+  if (puzzleIndex >= puzzles.length - 1) {
+    showFinalScreen();
+    return;
+  }
+
+  puzzleIndex += 1;
   showPuzzle(puzzles[puzzleIndex]);
 }
 
@@ -203,6 +246,8 @@ async function init() {
   }
 
   shuffle(puzzles);
+    // TEMP TEST: jump to last puzzle
+  puzzleIndex = puzzles.length - 1;
 
   showPuzzle(puzzles[puzzleIndex]);
 }
