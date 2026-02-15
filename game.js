@@ -246,8 +246,6 @@ async function init() {
   }
 
   shuffle(puzzles);
-    // TEMP TEST: jump to last puzzle
-  puzzleIndex = puzzles.length - 1;
 
   showPuzzle(puzzles[puzzleIndex]);
 }
