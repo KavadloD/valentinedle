@@ -65,6 +65,9 @@ body {
     transition: filter 200ms ease;
 
     box-shadow: 0 1px 18px rgba(0, 0, 0, 0.10);
+
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .guessForm {
